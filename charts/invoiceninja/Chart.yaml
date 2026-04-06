@@ -4,3 +4,6 @@ description: Helm chart for Invoice Ninja Debian stack (app, nginx, mysql, redis
 type: application
 version: 0.1.0
 appVersion: "latest"
+maintainers:
+  - name: Eric G. Burgueño
+    url: https://github.com/eburgueno
