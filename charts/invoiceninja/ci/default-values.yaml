@@ -1,0 +1,15 @@
+secret:
+  appKey: "base64:dGVzdGtleXRlc3RrZXl0ZXN0a2V5dGVzdGtleXJlc3Q="
+  dbPassword: "ninja-ci"
+  dbRootPassword: "ninja-ci-root"
+
+# Disable persistence - kind cluster has no default StorageClass
+persistence:
+  appPublic:
+    enabled: false
+  appStorage:
+    enabled: false
+  mysqlData:
+    enabled: false
+  redisData:
+    enabled: false
