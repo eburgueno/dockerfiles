@@ -1,0 +1,11 @@
+# Values used by both ct install and kubeconform validation.
+#
+# namespace.create is disabled because ct install creates the namespace itself
+# via --create-namespace, and Helm cannot own a namespace it didn't create.
+namespace:
+  create: false
+
+secret:
+  # Dummy key in valid Laravel format (base64-encoded 32 zero bytes).
+  # The app will start but any encrypted data will be garbage — fine for CI.
+  appKey: "base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
